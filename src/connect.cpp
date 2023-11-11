@@ -3,9 +3,10 @@
 #include <display.h>
 
 WiFiUDP ntpUDP;//time stuff
-NTPClient timeClient(ntpUDP, "pool.ntp.org");
+NTPClient timeClient(ntpUDP, "time.google.com");
 
 void initializeWifi(){
+    timeClient.setTimeOffset(-28800);
     const char* networkName = "Benji";
     const char* password = "SuperMiso01!";
     WiFi.begin(networkName, password);

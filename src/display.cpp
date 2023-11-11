@@ -20,12 +20,12 @@ void initializeDisplay(){
     delay(500);
 }
 
-void initializeMessage() {
+void initializeMessage(String message) {
     display.clearDisplay();
     display.setTextSize(2);
     display.setCursor(0,0);
     display.setFont();
-    display.println(scrollText);
+    display.println(message);
     display.display();
 }
 

@@ -10,7 +10,7 @@ extern Adafruit_SSD1306 display;
 
 void initializeDisplay();
 
-void initializeMessage();
+void initializeMessage(String message);
 
 //void initializeSecondCounter();
 
