@@ -1,0 +1,6 @@
+{
+    "idf.portWin": "COM3",
+    "files.associations": {
+        "new": "cpp"
+    }
+}
